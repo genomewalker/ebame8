@@ -9,6 +9,7 @@ dependencies:
   - bowtie2
   - seqkit
   - samtools>=1.14
+  - sambamba
   - picard
   - bedtools
   - mapdamage2

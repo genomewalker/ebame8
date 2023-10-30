@@ -13,5 +13,16 @@ BIN="/home/${USER}/ebame8-adna/opt/bin"
 mkdir -p "${APP_SRC}"
 mkdir -p "${BIN}"
 
-mamba env create -f https://raw.githubusercontent.com/genomewalker/ebame8/main/ebame8-aDNA-tutorial/mapping.yaml
-mamba env create -f https://raw.githubusercontent.com/genomewalker/ebame8/main/ebame8-aDNA-tutorial/metaDMG.yaml
+cd "${APP_SRC}" || exit
+
+git clone https://github.com/metaDMG-dev/metaDMG-cpp.git
+
+cd metaDMG-cpp || exit
+
+git checkout abd303e808c7d74166f305ac88ef538af9b1d44d
+
+make clean && make -j 8
+
+sudo mv metaDMG-cpp /usr/local/bin/
+
+rm -rf "${APP_SRC}/metaDMG-cpp"
