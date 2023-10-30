@@ -5,11 +5,16 @@
 # Otherwise executed first during a cloud deployement in IFB-Biosphere
 
 # Setting up the tutorial environment
-
 APP_SRC="/home/ubuntu/opt/src"
 BIN="/home/ubuntu/opt/bin"
+
 mkdir -p "${APP_SRC}"
 mkdir -p "${BIN}"
+
+mamba env create -f https://raw.githubusercontent.com/genomewalker/ebame8/main/ebame8-aDNA-tutorial/mapping.yaml
+mamba env create -f https://raw.githubusercontent.com/genomewalker/ebame8/main/ebame8-aDNA-tutorial/metaDMG.yaml
+
+conda activate metaDMG
 
 cd "${APP_SRC}" || exit
 
@@ -25,7 +30,4 @@ mv metaDMG-cpp "${BIN}"
 
 rm -rf "${APP_SRC}/metaDMG-cpp"
 
-pip install bam-filter
-pip install dmg-reads
-pip install get-read-percid
-pip install attrs "metaDMG[all]>=0.37.1" logger_tt==1.7.0 tabview
+conda deactivate

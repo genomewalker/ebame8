@@ -1,4 +1,4 @@
-name: ebame8-aDNA-tutorial
+name: metaDMG
 channels:
   - conda-forge
   - bioconda
@@ -20,9 +20,6 @@ dependencies:
   - eigen
   - pip
   - pip:
-      - bam-filter
-      - dmg-reads
-      - get-read-percid
       - attrs
       - metaDMG[all]>=0.37.1
       - logger_tt==1.7.0

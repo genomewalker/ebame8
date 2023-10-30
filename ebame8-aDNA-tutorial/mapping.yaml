@@ -1,0 +1,26 @@
+name: mapping
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - genomewalker
+dependencies:
+  - python=3.9
+  - bowtie2
+  - seqkit
+  - samtools>=1.14
+  - picard
+  - bedtools
+  - mapdamage2
+  - htslib
+  - csvtk
+  - htslib
+  - cxx-compiler
+  - gsl
+  - eigen
+  - pip
+  - pip:
+      - bam-filter
+      - dmg-reads
+      - get-read-percid
+      - tabview
