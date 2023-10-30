@@ -5,8 +5,8 @@
 # Otherwise executed first during a cloud deployement in IFB-Biosphere
 
 # Setting up the tutorial environment
-APP_SRC="/home/ubuntu/opt/src"
-BIN="/home/ubuntu/opt/bin"
+APP_SRC="/home/ubuntu/ebame8-adna"
+BIN="/home/ubuntu/ebame8-adna/opt/bin"
 
 mkdir -p "${APP_SRC}"
 mkdir -p "${BIN}"
