@@ -19,7 +19,7 @@ dependencies:
   - gsl
   - eigen
   - r
-  - r-tidyvers
+  - r-tidyverse
   - r-ggrepel
   - bioconductor-rsamtools
   - r-viridis
