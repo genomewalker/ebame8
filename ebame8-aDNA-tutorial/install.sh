@@ -24,3 +24,8 @@ make clean && make CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" HT
 mv metaDMG-cpp "${BIN}"
 
 rm -rf "${APP_SRC}/metaDMG-cpp"
+
+pip install bam-filter
+pip install dmg-reads
+pip install get-read-percid
+pip install attrs "metaDMG[all]>=0.37.1" logger_tt==1.7.0 tabview
