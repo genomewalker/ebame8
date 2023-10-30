@@ -19,6 +19,7 @@ dependencies:
   - gsl
   - eigen
   - perl
+  - perl-file-find
   - r
   - r-tidyverse
   - r-ggrepel
