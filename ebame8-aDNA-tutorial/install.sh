@@ -20,9 +20,9 @@ cd "${APP_SRC}" || exit
 
 git clone https://github.com/metaDMG-dev/metaDMG-cpp.git
 
-git checkout abd303e808c7d74166f305ac88ef538af9b1d44d
-
 cd metaDMG-cpp || exit
+
+git checkout abd303e808c7d74166f305ac88ef538af9b1d44d
 
 make clean && make CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" HTSSRC=systemwide -j 8
 
