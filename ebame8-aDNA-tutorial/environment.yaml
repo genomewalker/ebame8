@@ -18,6 +18,7 @@ dependencies:
   - cxx-compiler
   - gsl
   - eigen
+  - perl
   - r
   - r-tidyverse
   - r-ggrepel
