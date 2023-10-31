@@ -20,8 +20,8 @@ dependencies:
   - gsl
   - eigen
   - pip
+  - bbmap
   - pip:
       - bam-filter
-      - dmg-reads
       - get-read-percid
       - tabview
